@@ -13,22 +13,22 @@ This is a high-performance, real-time cryptocurrency monitoring application buil
 
 ## Features
 
-### 🚀 Real-Time Monitoring
+### Real-Time Monitoring
 - Scrapes live data from CoinMarketCap every 60 seconds.
 - Uses a persistent "headless" browser session to ensure updates happen in <2 seconds.
 
-### 💼 Smart Portfolio Manager
+### Smart Portfolio Manager
 - **Add/Remove Assets:** Dynamically manage your holdings (Bitcoin, Ethereum, etc.).
 - **Net Worth Calculator:** Instantly calculates total portfolio value based on live prices.
 
-### 📊 Interactive Visualization
+### Interactive Visualization
 - Professional-grade line charts using Chart.js.
 - Features gradient fills, tooltips, and dynamic scaling.
 
-### 🌍 Localization
+### Localization
 - **One-Click Currency Switcher:** Switch instantly between USD ($) and INR (₹).
 
-### 🎨 Modern UI
+### Modern UI
 - A clean, dark-mode interface designed for readability and performance.
 
 ---
@@ -141,6 +141,8 @@ CryptoLiveApp/
 ## 👩‍💻 Author
 
 **Vidhya Vinothkumar**
-vidhhya.2010@gmail.com
+*vidhhya.2010@gmail.com*
+
+---
 
 ```
