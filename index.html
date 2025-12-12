@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Crypto Tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>💰 My Portfolio</h2>
+        <button id="currency-btn">Switch to INR (₹)</button>
+        
+        <div class="card">
+            <h3>Net Worth</h3>
+            <h1 id="net-worth">$0.00</h1>
+        </div>
+
+        <div class="add-asset-box" style="margin-top: 20px; border-top: 1px solid #333; padding-top: 20px;">
+            <label>Add New Asset</label>
+            <select id="asset-dropdown" style="width: 100%; padding: 8px; margin-bottom: 10px; background: #333; color: white; border: 1px solid #555; border-radius: 4px;">
+                <option>Loading coins...</option>
+            </select>
+            
+            <input type="number" id="asset-qty" placeholder="Quantity (e.g. 0.5)" min="0" step="any" style="margin-bottom: 10px;">
+            
+            <button onclick="addAsset()" style="background: #00d2ff; color: black; font-weight: bold; border: none; width: 100%; border-radius: 4px; padding: 10px; cursor: pointer;">+ Add Asset</button>
+        </div>
+
+        <div id="holdings-list" style="margin-top: 20px;">
+            </div>
+
+    </div>
+
+    <div class="main">
+        <header>
+            <h1>🚀 Live Market Dashboard</h1>
+            <span id="status">Connecting...</span>
+        </header>
+
+        <div class="chart-controls" style="margin-bottom: 10px;">
+            <label style="color:#aaa; margin-right: 10px;">Graph View:</label>
+            <select id="coin-selector" style="padding: 5px; background: #333; color: white; border: 1px solid #555; border-radius: 4px;">
+                <option value="Bitcoin">Bitcoin</option>
+            </select>
+        </div>
+
+        <div class="chart-box">
+            <canvas id="priceChart"></canvas>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Coin</th>
+                    <th>Price</th>
+                    <th>24h Change</th>
+                    <th>Market Cap</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <tr><td colspan="4">Loading live data...</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
